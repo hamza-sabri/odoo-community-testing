@@ -1,51 +1,86 @@
-# sphinx build directories
-_build/
-
-# dotfiles
-.*
-!.gitignore
-!.github
-!.mailmap
-# compiled python files
-*.py[co]
+# Byte-compiled / optimized / DLL files
 __pycache__/
-# setup.py egg_info
-*.egg-info
-# emacs backup files
+*.py[cod]
+/.venv
+/.pytest_cache
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+bin/
+build/
+develop-eggs/
+dist/
+dist_wo_pbr/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.eggs
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage\.*
+.coverage\_*
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Pycharm
+.idea
+
+# Eclipse
+.settings
+
+# Visual Studio cache/options directory
+.vs/
+.vscode
+
+# OSX Files
+.DS_Store
+
+# Django stuff:
+*.log
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Sphinx documentation
+docs/_build/
+
+# Backup files
 *~
-# hg stuff
-*.orig
-status
-# odoo filestore
-odoo/filestore
-# maintenance migration scripts
-odoo/addons/base/maintenance
-# window installation config file
-/odoo.conf
+*.swp
+*.rdb
 
-# generated for windows installer?
-install/win32/*.bat
-install/win32/meta.py
+# OCA rules
+!static/lib/
 
-# needed only when building for win32
-setup/win32/static/less/
-setup/win32/static/wkhtmltopdf/
-setup/win32/static/postgresql*.exe
-
-# js tooling
-node_modules
-jsconfig.json
-tsconfig.json
-package-lock.json
-package.json
-.husky
-
-# various virtualenv
-/bin/
-/build/
-/dist/
-/include/
-/lib/
-/man/
-/share/
-/src/
+# Auto-generated
+ChangeLog
+.pre-commit-config-local.yaml
+.bash_history
+odoo-web-data/
+config/local-odoo.conf
+config/local-odoo-configurations.conf
