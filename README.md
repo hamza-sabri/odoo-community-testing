@@ -30,3 +30,17 @@ For a standard installation please follow the <a href="https://www.odoo.com/docu
 from the documentation.
 
 To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/17.0/developer/howtos.html">the developer tutorials</a>
+
+# Config virtual environment
+* pipenv shell
+* pipenv --python 3.11.0
+* pip install -r requirements.txt
+
+
+# Run Migration for Odoo Community
+* --config=./config/local-odoo-configurations.conf --stop-after-init --without-demo=True --no-http -i all
+
+
+# Run Odoo Locally 
+* --config=./config/local-odoo-configurations.conf --load=web --limit-time-cpu 999 --limit-time-real 999 --dev xml
+
