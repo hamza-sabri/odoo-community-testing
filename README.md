@@ -44,3 +44,8 @@ To learn the software, we recommend the <a href="https://www.odoo.com/slides">Od
 # Run Odoo Locally 
 * --config=./config/local-odoo-configurations.conf --load=web --limit-time-cpu 999 --limit-time-real 999 --dev xml
 
+# You Would find odoo running on theis port 8069
+
+# Please create the database from postgres the name is in the config file
+
+![img.png](img.png)
